@@ -252,7 +252,7 @@
 .happening_content--title-box {
   @media screen and (max-width: 992px) {
     position: sticky;
-    top: 0;
+    top: 20px;
     background-color: #f6f8f9;
     z-index: 99;
     width: calc(100% + 2px);
