@@ -1,0 +1,106 @@
+$primaryColor: #fa6980;
+$helveticaBold: "helveticabold";
+$helveticaRegular: "helveticaregular";
+$paracolor: #a6adb4;
+$transparent: transparent;
+$white-color: #fff;
+$dark-grey: #343638;
+$instagram-color: #fb3958;
+$twitter-color: #00ACEE;
+$facebook-color: #3b5998;
+$discover-color: #4885ed;
+
+%title {
+  font-size: 24px;
+  font-family: $helveticaBold;
+  line-height: 34px;
+}
+%acumin-para {
+  color: $paracolor;
+  line-height: 26px;
+  font-size: 16px;
+  font-family: "Acumin Pro";
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.Carousel--Navigation {
+  position: relative;
+  display: flex;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: static;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 10px;
+
+  &:after {
+    color: #202124;
+    content: "\e900" !important;
+    font-family: "avDevs-icons";
+    font-size: 10px;
+  }
+}
+.swiper-button-next {
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev {
+  margin-right: 20px;
+}
+
+.swiper-slide {
+  justify-content: inherit !important;
+}
+
+.card {
+  width: 100% !important ;
+}
+
+.mobileMenu--Icons {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+input, textarea, select{
+    &:focus {
+        border: 1px solid rgba(255, 255, 255, 0.5) !important;
+        transition: 0.3s all ease-in-out;
+        box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.5);
+    }
+} 
+
+[class^="av-"],
+[class*=" av-"] {
+    &:before {
+        transition: 0.3s all ease-in-out;
+    }
+}
+
+.Footer--emailId {
+    position: relative;
+}
+
+.input--Email {
+    padding-right: 35px !important;
+}
+
+.Footer--emailSubmit {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/svg/send.svg');
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    background-color: transparent;
+    right: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}

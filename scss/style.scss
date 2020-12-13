@@ -1,0 +1,45 @@
+$browser-context: 16; // Default
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+  // font-size: em(16);
+}
+
+@import "font";
+@import "mixin";
+@import "resettop";
+@import "common";
+@import "header";
+@import "home";
+@import "footer";
+@import "resetbottom";
+@import "icons";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "helveticaregular";
+}
+body {
+  background-color: #f6f8f9;
+}
+img {
+  width: 100%;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
