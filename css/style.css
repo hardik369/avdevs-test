@@ -611,6 +611,17 @@ input:focus, textarea:focus, select:focus {
     transition: 0.5s all ease-in-out;
     margin: 0;
   }
+  .Header--mainWrapper nav:before {
+    content: '';
+    background: #fff;
+    height: 65px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 290px;
+    z-index: 9;
+    width: 0;
+  }
   .Header--mainWrapper nav.active {
     left: 0;
     -ms-flex-wrap: wrap;
@@ -625,14 +636,9 @@ input:focus, textarea:focus, select:focus {
     overflow: auto;
   }
   .Header--mainWrapper nav.active:before {
-    content: '';
-    background: #fff;
-    height: 65px;
-    left: 0;
-    top: 0;
-    position: fixed;
     width: 290px;
-    z-index: 9;
+    -webkit-transition: 0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
   }
   .Header--mainWrapper nav.active .Header-navItem {
     margin-bottom: 50px;
